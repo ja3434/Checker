@@ -9,6 +9,7 @@ int main()
 {
     long long Srednia=0;
     cout<<fixed<<setprecision(2);
+    
     bool b=0;
     for(int i=0;!b&&i<L;i++)
     {
