@@ -25,7 +25,7 @@ while [ $var -lt $ilosc ];do
 	mierzdzies=$(($mierzset /10))
 	mierzset=$(($mierzset % 10))
 	touch smiec.txt
-	if  cmp test.out brut.out > ruzn.txt;then
+	if  diff -bq test.out brut.out > smiec.txt;then
 		
 		echo Test $var.	Wynik OK   czas $mierzsek.$mierzdzies$mierzset	blendy $bledne
 			
